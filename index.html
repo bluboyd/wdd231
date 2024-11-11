@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 - Web Front End Development 1 - Chioma Joy Asiama</title>
+    <meta name="author" content="Chioma J Asiama">
+    <meta name="description" content="WDD231 - Web Front End Development 1 - Course Home Page">
+
+    <!-- Open Graph meta properties -->
+    <meta property="og:title" content="Course Home Page">
+    <meta property="og:type" content="Website">
+    <meta property="og:image"
+        content="https://www.nairaland.com/attachments/5980935_boY3ajd_jpg93d3b429d57c0cc83936123085654ec3">
+    <meta property="og:url" content="https://bluboyd.github.io/wdd231/">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/course-page.css">
+    <script src="scripts/course-page.js" defer></script>
+    <link rel="icon" href="course-home-page.ico">
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <img id="myImage1" src="images/profile.jpg" alt="lovely Picture">
+            <h1>Chioma J Asiama</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle-Menu">
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+        </button>
+        <nav>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="course-work">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section id="location">
+            <h2>Lagos Nigeria</h2>
+            <img src="images/lagos.jpeg" alt="Lagos Island">
+            <h3>Lagos Island</h3>
+        </section>
+        <section id="certificates">
+            <h2>Web and Computer Programming Certificate</h2>
+            <p>Credits: <span id="total-credits"></span></p>
+            <div id="filter-buttons">
+                <button id="filter-all">All</button>
+                <button id="filter-cse">CSE</button>
+                <button id="filter-wdd">WDD</button>
+            </div>
+            <hr>
+            <div id="courses-container"></div>
+
+            
+        </section>
+
+        <dialog id="course-details"></dialog>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span><br> 🧞‍♀️ Chioma Asiama<br> 🧞‍♀️ Nigeria <img
+                src="images/nigeria-flag.jpg" alt="Nigeria Flag" class="flag"></p>
+        <p id="lastModified"> Last Update: </p>
+    </footer>
+</body>
+
+</html>
