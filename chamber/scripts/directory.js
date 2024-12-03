@@ -1,22 +1,12 @@
 const menuToggle = document.getElementById('menu-toggle');
-const nav = document.querySelector('nav');
+    const nav = document.querySelector('nav');
 
-menuToggle.addEventListener('click', function () {
-    menuToggle.classList.toggle('open');
-    nav.classList.toggle('show');
-});
+    menuToggle.addEventListener('click', function () {
+        menuToggle.classList.toggle('open');
+        nav.classList.toggle('show');
+    });
 
 
-// footer date information
-let currentDate = new Date();
-let currentYear = currentDate.getFullYear();
-let currentYearElement = document.getElementById("currentYear");
-currentYearElement.textContent = currentYear;
-
-let date = document.lastModified;
-document.getElementById("lastModified").innerHTML = "Last modified: " + date;
-
-// directory cards
 document.addEventListener('DOMContentLoaded', fetchMembers);
 
 async function fetchMembers() {
@@ -48,7 +38,11 @@ function displayMembers(members) {
         `;
         memberContainer.appendChild(memberCard);
     });
+    
+
+    
 }
+
 
 document.getElementById('grid').addEventListener('click', () => toggleView('grid'));
 document.getElementById('list').addEventListener('click', () => toggleView('list'));
@@ -63,3 +57,12 @@ function toggleView(view) {
         memberContainer.classList.add('list-view');
     }
 }
+// Output the current year in the footer's first paragraph
+// footer date information
+let currentDate = new Date();
+let currentYear = currentDate.getFullYear();
+let currentYearElement = document.getElementById("currentYear");
+currentYearElement.textContent = currentYear;
+
+let date = document.lastModified;
+document.getElementById("lastModified").innerHTML = "Last modified: " + date;
