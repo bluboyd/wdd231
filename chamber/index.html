@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikoyi Chamber of Commerce Home Page</title>
+    <meta name="author" content="Chioma J Asiama">
+    <meta name="description" content="Ikoyi Chamber of commerce home page">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ikoyi Chamber of Commerce">
+    <meta property="og:url" content="https://ikyoicc.com/">
+    <meta property="og:image" content="https://raw.githubusercontent.com/bluboyd/wdd231/refs/heads/main/chamber/images/lawson.png">
+    <meta property="og:description"
+        content="Discover local businesses and services with the Lagos City Chamber of Commerce directory.">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap" rel="stylesheet">
+
+
+    <!-- Normalize CSS (Reset CSS) -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/ikoyicc.jpg" alt="Website Logo">
+                <h1>Ikoyi Chamber of Commerce</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle-Menu">
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+            </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="https://iheanyi11.github.io/wdd231/chamber/index.html">Home</a></li>
+                    <li><a href="https://iheanyi11.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                    <li><a href="https://iheanyi11.github.io/wdd231/chamber/join.html">Join</a></li>
+                    <li><a href="https://iheanyi11.github.io/wdd231/chamber/discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/ikoyi-hero.webp" alt="City">
+            <button class="cta">Join Ikoyicc</button>
+        </div>
+
+        <div class="main-contents">
+            <div class="events">
+                <h3>Events</h3>
+                <p>Christmas Carol - December 23, 2024</p>
+            </div>
+            <div class="weather" id="weather">
+                <h3>Weather Forecast</h3>
+                <ul id="forecast"></ul>
+            </div>
+            <div class="current-weather" id="current-weather">
+                <h3>Current Weather</h3>
+                <p id="current-temp">Temperature: Loading...</p>
+                <p id="current-condition">Condition: Loading...</p>
+            </div>
+        </div>
+        <div class="bussiness-spotlight" id="bussiness-spotlight">
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h2>Ikoyi Chamber of Commerce</h2>
+                <address>
+                    10 Kingaway Road<br>
+                    Ikoyi, Lagos<br>
+                    <a href="mailto:ikoyicc.com">info@ikoyicc.com</a><br>
+                    <a href="tel:+2348033003172">(234) 803-300-3172</a>
+                </address>
+            </div>
+            <div class="footer-social">
+                <a href="www.youtube.com"><img src="images/youtube.jpg" alt="YouTube"></a>
+                <a href="www.twitter.com"><img src="images/x.webp" alt="Twitter"></a>
+                <a href="www.facebook.com"><img src="images/facebook.webp" alt="Facebook"></a>
+            </div>
+            <div class="footer-credit">
+                <p>WDD231 Class Project</p>
+                <p>Chioma J Asiama</p>
+                <p>© <span id="currentYear"></span> Ikoyi Chamber of Commerce</p>
+                <p id="lastModified"> Last Update: </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

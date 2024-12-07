@@ -13,7 +13,7 @@
             "address": "4 Norman William Street, Ikoyi, Lagos, Nigeria",
             "phoneNumber": "+2349055555500",
             "websiteUrl": "www.bluboyddgital.com",
-            "imageFileName": "images/ajcee.webp",
+            "imageFileName": "images/bluboyd.webp",
             "membershipLevel": 2
         },
         {
@@ -21,7 +21,7 @@
             "address": "7 Okepa Street, Ikoyi, Lagos, Nigeria",
             "phoneNumber": "+2343000044427",
             "websiteUrl": "www.corporateinsurance.com",
-            "imageFileName": "images/ajcee.webp",
+            "imageFileName": "images/image3.webp",
             "membershipLevel": 3
         },
         {
@@ -29,7 +29,7 @@
             "address": "17 Maitama Street, Ikoyi, Lagod, Nigeria",
             "phoneNumber": "+2348009800000",
             "websiteUrl": "www.lawsonchambers.com",
-            "imageFileName": "images/ajcee.webp",
+            "imageFileName": "images/lawson.png",
             "membershipLevel": 1
         },
         {
@@ -37,7 +37,7 @@
             "address": "1 Akanbi Damola Street, Ikoyi, Lagos Nigeria",
             "phoneNumber": "+2349010100111",
             "websiteUrl": "www.renochgroup.com",
-            "imageFileName": "images/ajcee.webp",
+            "imageFileName": "images/ikoyicc-logo.jpg",
             "membershipLevel": 1
         },
         {
@@ -45,15 +45,15 @@
             "address": "5 Bankole Oki Street, Ikoyi, Lagod, Nigeria",
             "phoneNumber": "+2343000000021",
             "websiteUrl": "www.stiches.com",
-            "imageFileName": "images/ajcee.webp",
-            "membershipLevel": 1
+            "imageFileName": "images/stitches.png",
+            "membershipLevel": 3
         },
         {
             "name": "Everyday Superstore",
             "address": "77 Onitana Road, Ikoyi, Lagod, Nigeria",
             "phoneNumber": "+2349009800555",
             "websiteUrl": "www.everydayss.com",
-            "imageFileName": "images/ajcee.webp",
+            "imageFileName": "images/image2.png",
             "membershipLevel": 1
         }
 
