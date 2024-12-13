@@ -110,11 +110,3 @@ currentYearElement.textContent = currentYear;
 
 let date = document.lastModified;
 document.getElementById("lastModified").innerHTML = "Last modified: " + date;
-
-
-
-
-
-
-
-

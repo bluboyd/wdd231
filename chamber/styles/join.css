@@ -8,7 +8,7 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color:  #219EBC;
     color: #333;
 }
 
@@ -106,79 +106,142 @@ nav a:hover {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-main {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 1rem;
-}
-
-/* CSS for grid and list view */
-
-#main-content {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    background-color: #1b1f23;
-}
-
-#member-container {
+/* Main design */
+.main-container {
     display: flex;
     flex-wrap: wrap;
-    font-size: 12px;
-    gap: 20px;
+    justify-content: space-between;
     padding: 20px;
-    padding-top: 3em;
 }
 
-#member-container a {
-    text-decoration: none;
+.main-container p,
+h2,
+h3,
+ul,
+label {
     color: #ffffff;
+}
+
+form {
+    width: 100%;
+    max-width: 600px;
+    background: #1b1f23;
+    border: 2px solid #94d2bd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.submit-btn {
+    background: #003b4f;
+    color: white;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.membership-levels {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 2px solid #94d2bd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    background-color: #1b1f23;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #94d2bd;
+    border-radius: 8px;
+    text-align: center;
+    /* opacity: 0; */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card h3 {
+    margin: 0 0 10px;
+}
+
+.card button {
+    background-color: #003b4f;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
     cursor: pointer;
 }
 
-
-.member-card h3,
-p {
-    color: #ffffff;
+.card:hover {
+    transform: scale(1.05);
 }
 
-.member-card {
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content p,
+h2,
+h3,
+ul {
+    color: white;
+}
+
+.thanks h1,
+p,
+h2,
+h3,
+ul {
+    color: white;
+}
+
+.modal-content {
+    background-color: #1b1f23;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
     border: 2px solid #94d2bd;
-    background-color: #2b2d31;
-    padding: 10px;
-    padding-top: 20px;
-    border-radius: 5px;
-    width: 100%;
-    box-shadow: 0 4px 6px rgba(66, 39, 200, 0.4), 0 1px 3px rgba(74, 39, 200, 0.3);
+    max-width: 500px;
+    border-radius: 8px;
+    position: relative;
 }
 
-.grid-view .member-card {
-    width: calc(33.33% - 40px);
-    text-align: center;
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-.list-view .member-card {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    font-size: 1.5em;
+.close:hover,
+.close:focus {
+    color: #000;
 }
-
-.list-view .member-card img {
-    margin-right: 20px;
-    margin: 0;
-}
-
-.member-card img {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 15%;
-    display: block;
-    margin: 0 auto 10px;
-}
-
 
 /* footer design */
 footer {
@@ -290,7 +353,6 @@ footer {
     nav.show {
         display: flex;
     }
-
 
     .footer-container {
         flex-direction: column;
