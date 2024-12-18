@@ -12,15 +12,15 @@
     --paragraph-font: Urbanist, Helvetica, sans-serif;
 
 
-    --headline-color-on-white: #AACCFF;
+    --headline-color-on-white: #33a3dc;
     /* headlines on a white background */
-    --headline-color-on-color: #f7f7f7;
+    --headline-color-on-color: #583f99;
     /* headlines on a colored background */
     --paragraph-color-on-white: #333333;
     /* paragraph text on a white background */
-    --paragraph-color-on-color: #f7f7f7;
+    --paragraph-color-on-color: #583f99;
     /* paragraph text on a colored background */
-    --paragraph-background-color: #AACCFF;
+    --paragraph-background-color: #33a3dc;
 
 }
 
